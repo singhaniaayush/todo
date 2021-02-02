@@ -1,17 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>Todo's</div>
+  <todo-first/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoFirst from "./components/TodoFirst.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TodoFirst
+  },
+};
 </script>
 
 <style>
@@ -22,5 +22,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo {
+  cursor: pointer;
 }
 </style>
